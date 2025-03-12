@@ -28,7 +28,7 @@ const Dashboard = () => {
     <div className="ml-[15%] flex flex-col items-center justify-center w-full min-h-screen px-4 md:px-8 text-center">
         <div className="max-w-xl mx-auto">
             <h2 className="text-gray-800 text-3xl md:text-4xl font-extrabold">
-                Welcome, {userData.firstName} {userData.surname}!
+                Welcome, {userData.firstName}!
             </h2>
             <p className="text-gray-600 text-sm md:text-base mt-4 leading-relaxed max-w-2xl mx-auto">
                 Welcome to your interactive hospital portal! We're here to help make your visit as easy and enjoyable as possible. Whether you're here for a check-up, treatment, or just visiting, you can explore fun games, learn about the hospital, and find everything you need right from your tablet.

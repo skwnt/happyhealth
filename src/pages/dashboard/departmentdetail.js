@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import Sidenav from './components/sidenav';
-import './stretch.css';
 
 function DepartmentDetail() {
     const { id } = useParams();
@@ -36,32 +35,30 @@ function DepartmentDetail() {
             <div className="flex flex-col md:flex-row h-full">
                 <Sidenav />
                 <div className="flex flex-col w-full ml-[25%] p-4">
-                    <div className="bg-white relative font-sans before:absolute before:w-full before:h-full before:inset-0 before:bg-black before:opacity-50 before:z-10">
-                        <img src={department.bannerImage} alt="Banner" className="absolute inset-0 w-full h-full object-cover" />
-                        <div className="relative z-50 h-full flex flex-col justify-center items-center text-center text-white p-6">
-                            <h2 className="text-4xl font-bold mb-6">{department.name} Department</h2>
-                            <p className="text-lg text-gray-200">Welcome to the {department.name} department</p>
-                            <p className="text-lg text-gray-200">Click below to see what happens at your appointment</p>
-                        </div>
-                    </div>
                     
-                    <div className="font-sans bg-white mb-10 max-w-5xl mx-auto mt-4">
-                        <h2 className="text-3xl font-extrabold border-b-2 border-gray-800 inline-block">Our Team</h2>
-                        <div className="grid lg:grid-cols-2 gap-6 mt-12">
-                            {department.team.map((member, index) => (
-                                <div key={index} className="grid grid-cols-3 items-center bg-gray-100 p-4 rounded-lg relative">
-                                    <div className="col-span-2 min-h-[190px]">
-                                        <img src={`/assets/images/department/${member.image}`} className="rounded-lg" alt={member.name} />
-                                    </div>
-                                    <div className="bg-white rounded-lg p-4 absolute right-4 shadow-md">
-                                        <h4 className="text-gray-800 text-sm font-bold">{member.role}</h4>
-                                        <p className="text-[10px] text-gray-500 mt-0.5">{member.name}</p>
-                                    </div>
-                                </div>
-                            ))}
+                    {/* Banner Section */}
+                    <div className="bg-[white] relative font-sans before:absolute before:w-full before:h-full before:inset-0  before:opacity-50 before:z-10">
+                        <div className="relative z-50 h-full flex flex-col justify-center items-center text-center text-[#33CCCC] p-6">
+                            <h2 className="text-4xl font-bold mb-6">{department.name} Department</h2>
+                            <p className="text-lg text-gray-800">{department.details}</p>
                         </div>
                     </div>
 
+                    {/* Doctor and Nurse Info */}
+                    <div className="flex flex-col md:flex-row items-center justify-center gap-8 bg-gray-100 p-6 rounded-lg mt-6">
+                        <div className="text-center">
+                            <img src={`/images/department/${department.doctor_img}`} alt={department.doctor} className="w-40 h-40 rounded-full mx-auto mb-3" />
+                            <h3 className="text-lg font-bold">{department.doctor}</h3>
+                            <p className="text-sm text-gray-500">Lead Doctor</p>
+                        </div>
+                        <div className="text-center">
+                            <img src={`/images/department/${department.nurse_img}`} alt={department.nurse} className="w-40 h-40 rounded-full mx-auto mb-3" />
+                            <h3 className="text-lg font-bold">{department.nurse}</h3>
+                            <p className="text-sm text-gray-500">Head Nurse</p>
+                        </div>
+                    </div>
+
+                    {/* Videos Section */}
                     <div className="bg-gray-100 px-10 py-12">
                         <h2 className="text-3xl font-extrabold text-gray-800 mb-8">{department.name} Videos</h2>
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -81,12 +78,13 @@ function DepartmentDetail() {
                         </div>
                     </div>
 
+                    {/* Images Section */}
                     <div className="bg-gray-100 px-10 py-12">
                         <h2 className="text-3xl font-extrabold text-gray-800 mb-8">{department.name} Images</h2>
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                            {department.images.map((img, index) => (
+                            {department.dept_img.map((img, index) => (
                                 <div key={index} className="bg-white rounded overflow-hidden">
-                                    <img src={`/assets/images/department/${img}`} alt="Department" />
+                                    <img src={`/images/department/${img}`} alt="Department" />
                                 </div>
                             ))}
                         </div>

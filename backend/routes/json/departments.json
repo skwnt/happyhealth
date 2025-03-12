@@ -1,38 +1,50 @@
 [
   {
     "id": 1,
-    "name": "x-ray",
-    "details": "The X-Ray Department is a special place where doctors use amazing machines to take pictures of the inside of your body. These pictures help the doctors see your bones, muscles, and other important parts to figure out what’s making you feel unwell or if you’ve had an injury, like a broken bone. Don’t worry—it’s super quick and doesn’t hurt at all! You’ll stand still or lie down for a moment while the machine takes the picture, kind of like a big camera. It helps the doctors understand what’s happening so they can take the best care of you and help you feel better.",
+    "name": "Radiology",
+    "details": "The X-Ray Department is a special place where doctors use amazing machines to take pictures of the inside of your body. These pictures help the doctors see your bones, muscles, and other important parts to figure out what's making you feel unwell or if you've had an injury, like a broken bone. Don't worry—it's super quick and doesn't hurt at all! You'll stand still or lie down for a moment while the machine takes the picture, kind of like a big camera. It helps the doctors understand what’s happening so they can take the best care of you and help you feel better.",
     "doctor": "Doctor Smith",
-    "doctor_img": "x-ray_doctor.jpg",
+    "doctor_img": "drRadio.jpg",
     "nurse": "Nurse Pratchett",
-    "nurse_img": "x-ray_nurse.jpg",
-    "dept_map": "xray_map.jpg",
-    "dept_img": ["x-rays.gif"],
-    "videos": ["FId7wHAd1Cg?si=X28sg4wONarFmS_Z", "FId7wHAd1Cg?si=X28sg4wONarFmS_Z", "FId7wHAd1Cg?si=X28sg4wONarFmS_Z"]
-
-
+    "nurse_img": "nurseRadio.jpg",
+    "image_url": "x-rays.png",
+    "dept_img": ["x-rays.png"],
+    "videos": ["uYuY4hpFiGY?si=hEOvQ6iBLAB4Bzer", "Q_Pa6KFL1Nw?si=UpMCXK_oer6eo8Zh", "rPVCYdTqpNE?si=3A3-uwy7y6Ozt90V"]
   },
   {
     "id": 2,
     "name": "Neurology",
     "details": "The Neurology Department is a special place where doctors and nurses help kids who have problems with their brain, nerves, or muscles. Your brain is like a supercomputer that controls your body, helping you think, move, and feel. Sometimes, the brain or nerves don’t work the way they should, and that’s when we step in to help. The doctors here are experts in finding out what’s going on and how to make you feel better. They use special tools, ask lots of questions, and may even show you cool pictures of your brain! Our job is to help you stay healthy and strong so you can keep learning, playing, and having fun.",
     "doctor": "Doctor Jones",
-    "doctor_img": "neurology_doctor.jpg",
+    "doctor_img": "drO.jpg",
     "nurse": "Nurse Stevenson",
-    "nurse_img": "neurology_nurse.jpg",
-    "dept_map": "neurology_map.jpg",
+    "nurse_img": "nurseO.jpg",
+    "image_url": "brain.png",
     "dept_img": ["neurology_img1.jpg", "neurology_img2.jpg", "neurology_img1.jpg"],
-    "videos": ["FId7wHAd1Cg?si=X28sg4wONarFmS_Z", "FId7wHAd1Cg?si=X28sg4wONarFmS_Z", "FId7wHAd1Cg?si=X28sg4wONarFmS_Z", "FId7wHAd1Cg?si=X28sg4wONarFmS_Z", "FId7wHAd1Cg?si=X28sg4wONarFmS_Z"]
-
+    "videos": ["ndDpjT0_IM0?si=DnPuLQ-gUDzCDV3a", "mqJ2-BjM1wM?si=lYSSt6FX3f2ubNJw", "p38nzOGJZtI?si=TlgtKAW3jPZz8QV8"]
   },
-    {
-      "id": 3,
-      "name": "Pediatrics"
-    },
-    {
-      "id": 4,
-      "name": "Orthopedics"
-    }
-  ]
-  
+  {
+    "id": 3,
+    "name": "Pediatrics",
+    "details": "The Pediatrics Department is where doctors and nurses take care of babies, kids, and teenagers to help them grow strong and healthy. Our team understands that kids have special medical needs, and we make sure to provide the best care in a friendly, comforting way. Whether you're feeling sick, need a check-up, or just have questions about staying healthy, we’re here to help. Sometimes, you may need medicine, and other times, a simple check-up is all you need. Our goal is to keep you smiling, playing, and feeling your best!",
+    "doctor": "Doctor Martinez",
+    "doctor_img": "drP.jpg",
+    "nurse": "Nurse Wilson",
+    "nurse_img": "nurseP.jpg",
+    "image_url": "health-checkup.png",
+    "dept_img": ["pediatrics_img1.jpg", "pediatrics_img2.jpg", "pediatrics_img3.jpg"],
+    "videos": ["932E4B9UApg?si=leojy-gWSrR61Xnn", "gXXmVqS3tLk?si=2FqgA--DwMRkRB1x", "YnbcVw9Zm20?si=yllXk3KDhj94rNl5"]
+  },
+  {
+    "id": 4,
+    "name": "Orthopedics",
+    "details": "The Orthopedics Department is where doctors help kids who have problems with their bones, muscles, or joints. If you've ever broken a bone or had trouble walking or moving, an orthopedic doctor is the one who helps you heal. They use X-rays, special casts, and even small surgeries to make sure your body is strong and working properly. Our goal is to help you run, jump, and play without any pain or problems!",
+    "doctor": "Doctor Adams",
+    "doctor_img": "drN.jpg",
+    "nurse": "Nurse Taylor",
+    "nurse_img": "nurseN.jpg",
+    "image_url": "bone.png",
+    "dept_img": ["orthopedics_img1.jpg", "orthopedics_img2.jpg"],
+    "videos": ["FRsuzrYSXII?si=2OrRP0x-A43Psdxz", "Bhd0fZqBsEE?si=ljGMil6kwCo36J0Q", "Z8gFaUUdyIc?si=EvrBy74YdMTKFQZk"]
+  }
+]

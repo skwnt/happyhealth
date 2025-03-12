@@ -61,3 +61,14 @@ const PORT = process.env.PORT || 5001;
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`)); 
 // Start the server and listen on the specified port, logging a message once it is running
+
+app.get('/departments/:id', (req, res) => {
+  const { id } = req.params; // Get the department ID from the URL
+  const department = departments.find(dept => dept.id.toString() === id); // Find the department by ID
+
+  if (!department) {
+    return res.status(404).json({ message: 'Department not found' });
+  }
+
+  res.json(department); // Return the department details
+});

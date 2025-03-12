@@ -5,7 +5,7 @@ import Navigation from './components/navigation';
 import Home from './pages/home';
 import Login from './pages/login';
 import Register from './pages/register';
-import Map from './pages/map';
+import Map from './pages/dashboard/map';
 import Dashboard from './pages/dashboard/dashboard';
 import Account from './pages/dashboard/account';
 import Departments from './pages/dashboard/departments';
@@ -40,13 +40,14 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/login" element={isLoggedIn ? <Navigate to="/dashboard" /> : <Login setIsLoggedIn={setIsLoggedIn} />} />
           <Route path="/register" element={isLoggedIn ? <Navigate to="/dashboard" /> : <Register />} />
+          <Route path="/map" element={isLoggedIn ? <Map /> : <Navigate to="/login" />} />
           <Route path="/dashboard" element={isLoggedIn ? <Dashboard /> : <Navigate to="/login" />} />
           <Route path="/account" element={isLoggedIn ? <Account /> : <Navigate to="/login" />} />
           <Route path="/departments" element={isLoggedIn ? <Departments /> : <Navigate to="/login" />} />
           <Route path="/games" element={isLoggedIn ? <Games /> : <Navigate to="/login" />} />
           <Route path="/about" element={isLoggedIn ? <About /> : <Navigate to="/login" />} />
           <Route path="/wellness" element={isLoggedIn ? <Wellness /> : <Navigate to="/login" />} />
-          <Route path="/map" element={<Map />} />
+          
           
           {/* Dynamic Department Detail Page */}
           <Route path="/department/:id" element={isLoggedIn ? <DepartmentDetail /> : <Navigate to="/login" />} />

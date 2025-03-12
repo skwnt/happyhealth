@@ -47,7 +47,8 @@ function Departments() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-4">
                     {departments.map((dept) => (
                         <div key={dept.id} className="bg-white shadow-md rounded-lg overflow-hidden">
-                            <img src={dept.image_url} alt={dept.name} className="w-full h-48 object-cover" />
+                            {/* <img src={dept.image_url} alt={dept.name} className="w-full h-48 object-cover" /> */}
+                            <img src={`/images/department/${dept.image_url}`} alt="Department" />
                             <div className="p-4">
                                 <h3 className="text-lg font-semibold text-gray-900">{dept.name}</h3>
                                 <p className="text-gray-700 text-sm mt-2">{dept.description}</p>
