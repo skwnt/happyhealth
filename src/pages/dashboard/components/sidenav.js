@@ -43,7 +43,7 @@ function Sidenav() {
       </svg>
 
       {/* Sidebar Content */}
-      <div className="z-10 flex flex-col flex-1 p-6">
+      <div className="z-10 flex flex-col flex-1 p-6 relative">
         <div
           className="flex flex-col items-center justify-center cursor-pointer"
           onClick={() => setIsSlideOutOpen(!isSlideOutOpen)}
@@ -62,16 +62,16 @@ function Sidenav() {
 
         {/* Sidebar Navigation Links (Kept the same) */}
         <ul className="space-y-3 flex-1">
-          <li><Link to="/dashboard" className="text-white hover:text-[#33CCCC] text-sm flex items-center w-full hover:bg-white rounded px-4 py-3 transition-all">Dashboard</Link></li>
+          <li><Link to="/dashboard" className="text-white hover:text-[#33CCCC] text-sm flex items-center w-full hover:bg-white rounded px-4 py-3 transition-all hover:w-full">Dashboard</Link></li>
           <li><Link to="/about" className="text-white hover:text-[#33CCCC] text-sm flex items-center w-full hover:bg-white rounded px-4 py-3 transition-all">About</Link></li>
-          <li><Link to="/departments" className="text-white hover:text-[#33CCCC] text-sm flex items-center w-full hover:bg-white rounded px-4 py-3 transition-all">Departments</Link></li>
-          <li><Link to="/map" className="text-white hover:text-[#33CCCC] text-sm flex items-center w-full hover:bg-white rounded px-4 py-3 transition-all">Hospital Map</Link></li>
-          <li><Link to="/wellness" className="text-white hover:text-[#33CCCC] text-sm flex items-center w-full hover:bg-white rounded px-4 py-3 transition-all">Wellness Tips</Link></li>
-          <li><Link to="/games" className="text-white hover:text-[#33CCCC] text-sm flex items-center w-full hover:bg-white rounded px-4 py-3 transition-all">Games</Link></li>
+          <li><Link to="/departments" className="text-white hover:text-[#33CCCC] text-sm flex items-center w-full hover:bg-white rounded px-4 py-3 transition-all hover:w-40">Departments</Link></li>
+          <li><Link to="/map" className="text-white hover:text-[#33CCCC] text-sm flex items-center w-full hover:bg-white rounded px-4 py-3 transition-all hover:w-20">Hospital Map</Link></li>
+          <li><Link to="/wellness" className="text-white hover:text-[#33CCCC] text-sm flex items-center w-full hover:bg-white rounded px-4 py-3 transition-all hover:w-20">Wellness Tips</Link></li>
+          <li><Link to="/games" className="text-white hover:text-[#33CCCC] text-sm flex items-center w-full hover:bg-white rounded px-4 py-3 transition-all hover:w-20">Games</Link></li>
           <li>
             <button
               onClick={handleLogout}
-              className="text-white hover:text-[#33CCCC] text-sm flex items-center w-full hover:bg-white rounded px-4 py-3 transition-all"
+              className="text-white hover:text-[#33CCCC] text-sm flex items-center w-full hover:bg-white rounded px-4 py-3 transition-all hover:w-20"
             >
               Logout
             </button>

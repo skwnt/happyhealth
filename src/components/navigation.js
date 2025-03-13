@@ -20,7 +20,7 @@ const Navigation = ({ isLoggedIn, handleLogout }) => {
 
                         {/* Header Text */}
                         <header className="text-white text-center">
-                            <h1 className="text-2xl font-bold">Happy Health Portal</h1>
+                            <h1 className="text-2xl font-bold">HappyHealth Portal</h1>
                         </header>
                     </div>
                 </div>

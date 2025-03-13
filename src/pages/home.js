@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
     return (
-        <div className="font-[sans-serif] max-w-6xl max-md:max-w-md mx-auto text-center">
-            <div className="grid md:grid-cols-2 items-center md:gap-10 gap-6">
+        <div className="font-[sans-serif] max-w-6xl max-md:max-w-md mx-auto text-center ">
+            <div className="grid  items-center md:gap-10 gap-6 m-[5%]">
                 <div className="max-md:order-1">
 
                     <h2 className="text-gray-800 md:text-5xl text-3xl font-extrabold mb-4 md:!leading-[55px]">Welcome to HappyHealth Portal</h2>

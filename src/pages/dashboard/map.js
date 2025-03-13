@@ -6,12 +6,12 @@ function Map() {
 
   // Marker positions (adjust as per your map's layout)
   const markerPositions = {
-    x_ray: { top: "39%", left: "43%" },
-    neurology: { top: "45%", left: "60%" },
-    dental: { top: "45%", left: "24%" },
-    main: { top: "65%", left: "66%" },
-    cafe: { top: "67%", left: "40%" },
-    fun: { top: "26%", left: "56%" },
+    Radiology: { top: "39%", left: "43%" },
+    Neurology: { top: "45%", left: "60%" },
+    Pediatrics: { top: "45%", left: "24%" },
+    Orthopedics: { top: "65%", left: "66%" },
+    Cafe: { top: "67%", left: "40%" },
+    Fun: { top: "26%", left: "56%" },
   };
 
   return (

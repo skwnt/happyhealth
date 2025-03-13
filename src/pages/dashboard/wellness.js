@@ -21,7 +21,7 @@ const Dashboard = () => {
                 {/* SideNav for larger screens */}
                 <Sidenav />
 
-                <div className="flex flex-col items-center justify-center w-full min-h-screen px-4 md:px-8 text-center ml-[20%]">
+                <div className="flex flex-col items-center justify-center w-full min-h-screen px-4 md:px-8 text-center ml-[25%]">
                     <div className="max-w-xl mx-auto">
                         <h2 className="text-gray-800 text-3xl md:text-4xl font-extrabold">
                             Welcome, {userData.firstName} {userData.surname}!
