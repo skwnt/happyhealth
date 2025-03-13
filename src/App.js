@@ -32,6 +32,8 @@ function App() {
     setIsLoggedIn(false);
   };
 
+console.log(localStorage.getItem('token'));
+
   return (
     <div className="App">
       <Router>
