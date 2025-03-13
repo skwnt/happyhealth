@@ -8,7 +8,7 @@
     "nurse": "Nurse Pratchett",
     "nurse_img": "nurseRadio.jpg",
     "image_url": "x-rays.png",
-    "dept_img": ["x-rays.png"],
+    "dept_img": ["radio1.jpg", "radio2.jpg", "radio3.jpg"],
     "videos": ["uYuY4hpFiGY?si=hEOvQ6iBLAB4Bzer", "Q_Pa6KFL1Nw?si=UpMCXK_oer6eo8Zh", "rPVCYdTqpNE?si=3A3-uwy7y6Ozt90V"]
   },
   {
@@ -20,7 +20,7 @@
     "nurse": "Nurse Stevenson",
     "nurse_img": "nurseO.jpg",
     "image_url": "brain.png",
-    "dept_img": ["neurology_img1.jpg", "neurology_img2.jpg", "neurology_img1.jpg"],
+    "dept_img": ["N1.jpg", "n2.jpg", "n3.jpg"],
     "videos": ["ndDpjT0_IM0?si=DnPuLQ-gUDzCDV3a", "mqJ2-BjM1wM?si=lYSSt6FX3f2ubNJw", "p38nzOGJZtI?si=TlgtKAW3jPZz8QV8"]
   },
   {
@@ -32,7 +32,7 @@
     "nurse": "Nurse Wilson",
     "nurse_img": "nurseP.jpg",
     "image_url": "health-checkup.png",
-    "dept_img": ["pediatrics_img1.jpg", "pediatrics_img2.jpg", "pediatrics_img3.jpg"],
+    "dept_img": ["p1.jpg", "p2.jpg", "p3.jpg"],
     "videos": ["932E4B9UApg?si=leojy-gWSrR61Xnn", "gXXmVqS3tLk?si=2FqgA--DwMRkRB1x", "YnbcVw9Zm20?si=yllXk3KDhj94rNl5"]
   },
   {
@@ -44,7 +44,7 @@
     "nurse": "Nurse Taylor",
     "nurse_img": "nurseN.jpg",
     "image_url": "bone.png",
-    "dept_img": ["orthopedics_img1.jpg", "orthopedics_img2.jpg"],
+    "dept_img": ["o1.jpg", "o2.jpg", "o3.jpg"],
     "videos": ["FRsuzrYSXII?si=2OrRP0x-A43Psdxz", "Bhd0fZqBsEE?si=ljGMil6kwCo36J0Q", "Z8gFaUUdyIc?si=EvrBy74YdMTKFQZk"]
   }
 ]
